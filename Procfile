@@ -1,2 +1,3 @@
-web: node bin/index.js
-web: json-server database/db.json
+web: node server.js
+heroku ps:scale web=1
+web: json-server public/db.json
